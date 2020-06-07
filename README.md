@@ -21,15 +21,14 @@ import json <br>
 import requests <br>
 import redis <br>
 import websocket <br>
+import random,time<br>
 
 ws=websocket.WebSocket()
 
-import random,time
-
 ws.connect('ws://localhost:8000/ws/polData/')
 
-for i in range(1000):
-    time.sleep(3)
+for i in range(1000):<br>
+    time.sleep(3)<br>
     ws.send(json.dumps({'value':random.randint(1,100)}))
   
   
