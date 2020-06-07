@@ -17,10 +17,10 @@ Steps in project:
 4. Add consumer.py (Consumer is like view in WSGI and have 3 main async function connect, disconnect and recive)
 5. Use jupyter notebook and django client websockets to emit events:
 
-import json
-import requests
-import redis
-import websocket
+import json <br>
+import requests <br>
+import redis <br>
+import websocket <br>
 
 ws=websocket.WebSocket()
 
