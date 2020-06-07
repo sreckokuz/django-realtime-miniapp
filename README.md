@@ -32,7 +32,7 @@ for i in range(1000):<br>
     ws.send(json.dumps({'value':random.randint(1,100)}))
   
   
-6. Use javascript WebSocket to subscribe on consumers events:
+6. Use javascript WebSocket patern to subscribe on consumers events:
 
     	let socket = new WebSocket("ws://localhost:8000/ws/polData/")
     	socket.onopen = function(e) {
